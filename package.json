@@ -1,7 +1,7 @@
 {
-  "name": "looli",
+  "name": "quiz-app",
   "version": "1.0.0",
-  "description": "A quiz application to help learn a bit of vuejs in perspective",
+  "description": "Interview test application for gloong",
   "author": "Ofonime Francis <ofonimeusoro01@gmail.com>",
   "private": true,
   "scripts": {
