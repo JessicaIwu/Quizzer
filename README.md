@@ -1,5 +1,16 @@
 # quizApp
 
+### How to Use 
+1. Clone the Repo
+
+  >git clone https://github.com/gloong/quizapp.git
+
+2. Make Changes by providing your solution 
+
+3. Do a PR(Pull Request)
+
+# Task 
+
 > In this task the candidates are required to develop a Quiz application using VueJS. This task is to test the candidates proficiency in the language and also their problem solving abilities.  Features will include: 
 1. Sign-in/Sign-out functionality 
 2. Ability to create quiz questions 
@@ -7,6 +18,7 @@
 4. Ability to disable a quiz 
 5. Leaderboard
 
+# Functionalities 
 ## Sign-in / Sign-out functionality 
 Quiz should not be created anonymously, all quiz should be created by a verified user.
 
