@@ -3,8 +3,6 @@
 ### How to Use 
 1. Clone the Repo
 
-  >git clone https://github.com/gloong/quizapp.git
-
 2. Make Changes by providing your solution 
 
 3. Do a PR(Pull Request)

@@ -9,10 +9,7 @@
 import firebase from 'firebase'
 
 export default {
-  name: 'App',
-  firebase: {
-    usertable: usertab
-  }
+  name: 'App'
 }
 </script>
 
