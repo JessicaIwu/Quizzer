@@ -1,11 +1,13 @@
 <template>
-  <div id="app">
-    <img src="./assets/logo.png">
+  <div id="app" class="container">
+    <!-- <img src="./assets/logo.png"> -->
     <router-view/>
   </div>
 </template>
 
 <script>
+import firebase from 'firebase'
+
 export default {
   name: 'App'
 }
