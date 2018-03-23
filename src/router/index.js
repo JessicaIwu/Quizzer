@@ -7,6 +7,8 @@ import SignUp from '@/components/SignUp'
 import Home from '@/components/Home'
 import CreateQuiz from '@/components/CreateQuiz'
 import TakeQuiz from '@/components/TakeQuiz'
+import SetQuestions from '@/components/SetQuestions'
+
 import Vuefire from 'vuefire'
 import firebase from 'firebase'
 
@@ -55,6 +57,12 @@ let router = new Router({
       path: '/TakeQuiz',
       name: 'TakeQuiz',
       component: TakeQuiz
+    },
+     {
+      path: '/ViewQuiz/:quizId',
+      name: 'ViewQuiz',
+      component: SetQuestions,
+      props: true
     }
   ]
 })
