@@ -6,40 +6,31 @@
 				<h2>Take Quiz</h2>
 			</div>	
 		<div class="panel-body align-middle">
-				<table class="table table-striped">
-					<thead>
-						<tr>
-							<td>Quiz Title: &nbsp; </td>
-						</tr>
-						<tr>
-							<td>Set Test Duration: _  Seconds: &nbsp;</td>
-						</tr>
 
-						<tr>
-							<td>Question: _ &nbsp;</td>
-						</tr>
-					</thead>
-			
-				<tbody v-for="(quiz, index) in quizez" v-show="index === questionindex">
-					<tr>
-						<td id="countdown"></td>
-					</tr>
-					<tr>
-						<td>
-							<label for="question">{{ quiz.question }}</label>						<textarea id="question"></textarea>					
-						</td>
-					</tr>
-					<tr>
-					    <td v-for="answer in quiz.incorrect_answers">
-							<label>
+			<div class="row" style="background-color: #ccc; color: black; text-align: left; padding: 5px;">
+					    <div class="col-md-12">Quiz Title:</div>
+						<div class="col-md-12">Set Test Duration: _  Seconds:</div>
+
+						<div class="col-md-12">Question: _ &nbsp;</div>
+						
+			</div>
+			<br>
+			<div class="col-md-12">Question: _ &nbsp;</div>
+			<div v-for="(quiz, index) in quizez" v-show="index === questionindex" class="row" style="background-color: #ccc; color: black; text-align: left; padding: 5px; margin-top: 20px;">
+					    <div class="col-md-12">{{ quiz.question }}</div>
+						<div class="col-md-12">
+							<div v-for="answer in quiz.incorrect_answers">
+								<label>
 								<!-- bind the options to the array index of the answers array that matches this index -->
 								<input type="radio" name="answer" v-model="answers[index]" :value="answer"> {{answer}}
 							</label>
-					    </td>		
-					</tr>
-				</tbody>
-		        <!-- 	</question-component> -->
-				</table>
+							</div>
+						</div>
+
+						
+						
+			</div>
+				<br>
 				<div v-if="questionindex < quizez.length"></div>
 				<button v-if="questionindex > 0" v-on:click="prev">
 				prev
@@ -59,7 +50,7 @@ var quiz_questions = [
   "incorrect_answers": ["Steven Spielberg", "Stanley Kubrick", "James Cameron","Tim Burton"]
   },
    {
-  "question": "Who is Jess' boo?",
+  "question": "Who is lily?",
   "answer": "Steven",
   "incorrect_answers": ["Steven", "Stanley", "James","Tim"]
   }

@@ -1,8 +1,8 @@
 <template>
 	<div class="home">
-		<div id="nav">
-			<span class="f-left">Welcome {{name}} !</span> 
-			<button class="f-right" v-on:click="signOut">sign out</button>
+		<div id="nav" class="navbar navbar-expand-lg">
+			<span class="pull-left">Welcome!</span> 
+			<button class="pull-right btn btn-primary" v-on:click="signOut" style="margin-left: 500px">sign out</button>
 		</div>
 		<br>
 
